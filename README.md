@@ -6,31 +6,35 @@
 [![Arch](https://img.shields.io/badge/Arch-x64-informational.svg)](https://go.dev/wiki/MinimumRequirements)
 [![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-lightgray.svg)](https://t.me/v2raytun)
 
-# v2RayTun - Proxy Client
+# v2RayTun — Мощный кроссплатформенный прокси-клиент
 
-v2RayTun is a cross-platform proxy client built on [Xray core](https://github.com/XTLS/Xray-core), providing platform-specific applications for Android, Android TV, iOS, macOS, Windows, and Linux.
+**v2RayTun** — это высокопроизводительный клиент для работы с прокси, работающий на базе проверенного временем [Xray core](https://github.com/XTLS/Xray-core). Мы обеспечиваем бесшовную работу на Android, Android TV, iOS, macOS, Windows и Linux.
 
-> This repository is used for public roadmap, releases, bug reports, feature requests, and platform-specific notes.
+> Этот репозиторий — центр разработки: здесь мы ведем дорожную карту (roadmap), выпускаем релизы, разбираем баги и обсуждаем будущие фичи.
 
-## Releases
+## 🚀 Получить приложение
 
-Builds and release notes are published through [Telegram Releases](https://t.me/v2raytun/3) and [GitHub Releases](https://github.com/LXST-CODE/v2RayTun/releases).
+Актуальные сборки, чейнджлоги и новости:
+* [Telegram Releases](https://t.me/v2raytun/3)
+* [GitHub Releases](https://github.com/LXST-CODE/v2RayTun/releases)
 
-Available on [Google Play](https://play.google.com/store/apps/details?id=com.v2raytun.android) and [App Store](https://apps.apple.com/us/app/v2raytun/id6476628951).
+Официально в магазинах:
+* [Google Play](https://play.google.com/store/apps/details?id=com.v2raytun.android)
+* [App Store](https://apps.apple.com/us/app/v2raytun/id6476628951)
 
 > [!NOTE]
-> The App Store version is currently not available in the RU region.
+> В App Store версия недоступна для региона RU.
 
-## Usage
+## 🛠 Начало работы
 
 > [!WARNING]
-> The application does not provide ready-made configs, subscriptions, proxy servers, or VPN services!
+> v2RayTun — это **инструмент**, а не сервис. Приложение не предоставляет готовых конфигов, подписок или VPN-серверов. 
 
-The main function is carried out by importing configs or subscriptions into the application.
+Чтобы начать, просто импортируйте нужные вам конфигурации или подписки в приложение.
 
-## Platforms
+## 📱 Поддержка платформ
 
-v2RayTun has separate platform-specific implementations and release tracks.
+У каждой системы свой подход к сборке и дистрибуции:
 
 - [Android / Android TV](./android/)
 - [iOS](./ios/)
@@ -38,37 +42,22 @@ v2RayTun has separate platform-specific implementations and release tracks.
 - [Windows](./windows/)
 - [Linux](./linux/)
 
-## Independent release tracks
+## 📦 Система версий
 
-v2RayTun does not use a single global version for all platforms.
+Мы отказались от концепции «единой версии» для всех платформ. Каждый релизный трек развивается независимо, чтобы обеспечить максимальную стабильность для конкретной ОС.
 
-Each platform or platform group may have its own version number and release date.
-
-| Release track | Platforms | Codebase | Notes |
+| Трек | Платформы | Стек | Особенности |
 |---|---|---|---|
-| Android | Android, Android TV | Kotlin | Shared codebase with separate layouts, TV UI behavior, and platform-specific assets |
-| Desktop | Windows, Linux | Flutter / Dart | Shared codebase with separate packaging, requirements, and platform-specific assets |
-| iOS | iOS, iPadOS | Swift | Separate platform track with App Store release flow |
-| macOS Apple Silicon | macOS M2+ | Swift | Separate macOS track for Apple Silicon builds |
-| macOS Intel | macOS Intel | Swift | Separate macOS track for Intel builds |
+| **Android** | Android, Android TV | Kotlin | Единый код, разные UI-паттерны под ТВ и смартфоны |
+| **Desktop** | Windows, Linux | Flutter / Dart | Кроссплатформенная база с учетом специфики ОС |
+| **iOS** | iOS, iPadOS | Swift | Нативный трек с интеграцией App Store |
+| **macOS** | macOS M2+ / Intel | Swift | Раздельная оптимизация под архитектуры Apple |
 
-## Roadmap
+## 🗺 Roadmap и фидбек
 
-[Public Roadmap](https://github.com/users/LXST-CODE/projects/1) is managed through GitHub Projects.
+* **Roadmap:** Следите за развитием проекта в [GitHub Projects](https://github.com/users/LXST-CODE/projects/1).
+* **Issues:** Нашли ошибку или есть идея для крутой фичи? Открывайте [Issues](https://github.com/LXST-CODE/v2RayTun/issues). Пожалуйста, используйте шаблоны для обращений — это ускорит обработку.
 
-Roadmap items may include platform-specific plans, feature requests, known limitations, release work, and declined ideas.
+## 🌍 Языки / Languages
 
-## Issues and feedback
-
-Use GitHub Issues for:
-
-- Bug reports
-- Feature requests
-- Platform-specific problems
-- Roadmap suggestions
-
-Please use the issue templates when opening a new issue.
-
-## Languages
-
-Пояснения на русском языке могут добавляться там, где это помогает пользователям, но основная структура репозитория ведётся на английском языке.
+Основной язык документации — английский. Однако для удобства пользователей мы дополняем описание русскоязычными пояснениями там, где это необходимо.
